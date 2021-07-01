@@ -1,0 +1,37 @@
+*{
+    font-family: 돋움;
+    font-size: 12px;
+    color: #444444;
+}
+#date{
+    font-size: 14px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 210px;
+    list-style: none;
+}
+table,th,td{
+    margin-top: 15px;
+    border:solid 1px #aaaaaa;
+    border-top: solid 2px #aaaaaa;
+text-align: justify;
+/* 왼쪽위로 어케올려.. */
+}
+tr{
+    height: 60px;
+}
+td{
+    width: 76px;
+}
+#day{
+    height: 20px;
+    background-color: #f8f9f2;
+    font-weight: bold;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}

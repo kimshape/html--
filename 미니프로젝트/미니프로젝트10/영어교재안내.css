@@ -1,0 +1,37 @@
+table,th,td{
+    text-align: center;
+    border: 1px solid #e6ecd4;
+    font-style: 돋움;
+    font-size: 12px;
+    color: #444444;
+   
+}
+tr{
+    height: 30px;
+    padding: 10px;
+}
+
+th{
+    background-color: #f8f9f2;
+    color: #7a7e6f;
+}
+
+.col1{
+    width: 80px;
+}
+.col2{
+    width: 150px;
+
+}
+.col3{
+width:150px;
+}
+.col4{
+    width: 120px;
+}
+.col5{
+    width: 100px;
+}
+
+/* 테이블 경계선이 단일 실선이 아님. */
+/* 테이블 모든 행 높이는 30px 어케 설정? */

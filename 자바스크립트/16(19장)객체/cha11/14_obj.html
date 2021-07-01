@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #digClock{
+                float: left;
+            color: blue;
+            font-size: x-large;
+            }
+            #second{
+                float: center;
+                color: blue;
+            font-size: x-large;
+            }
+            #second1{
+                float: center;
+                color: red;
+                font-size: xx-large;
+                font-weight: bold;
+                
+            }
+        </style>
+        
+    </head>
+<body>
+    
+    <div id="digClock"></div>
+    <p id="second"></p>
+    <p id="second1"></p>
+    <script>
+        function digClock() {
+            var today=new Date();
+            var day=today.getMonth()+1 + "월 " + today.getDate() + "일 ";  
+            var time=today.getHours() + "시 " + today.getMinutes() + "분 ";
+            var second=today.getSeconds() 
+            // second는 50보다작은거 (파랑)
+            //  second1은 50보다 큰거 (빨강) 
+            if(second>=50){
+                second=second1
+            }
+            var second1=today.getSeconds() 
+            
+            document.getElementById("digClock").innerHTML=day+time;
+            
+            document.getElementById("second").innerHTML=second;
+            
+            document.getElementById("second1").innerHTML=second;
+            
+            setTimeout('digClock()', 1000);
+           
+        }
+        digClock();
+        
+    </script>
+    
+</body>
+</html>
+<!-- 네이비즘처럼 만들고싶다 -->

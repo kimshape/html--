@@ -1,0 +1,21 @@
+*{
+    font-family: 바탕;
+    color: #444444;
+}
+
+#title{
+    font-size: 30px;
+    color: #000000;
+}
+.menu{
+    font-size: 20px;
+    color: #222222;
+}
+.red{
+    font-weight: bold;
+    color: red;
+}
+.blue{
+    text-decoration: underline;
+    color: #0000ff;
+}

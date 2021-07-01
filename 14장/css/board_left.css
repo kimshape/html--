@@ -1,0 +1,55 @@
+/* 생략 */
+
+/* 서브메뉴 */
+aside #sub_menu{
+    width: 186px;
+    height: 320px;
+    margin-top: 15px;
+    background-image: url("../img/sub_menu_bg.png");
+    background-repeat: no-repeat;
+    /* border:solid 1px #ff0000 */
+}
+aside #sub_menu ul{
+    padding: 80px 0 0 30px;
+}
+aside #sub_menu li{
+    margin:10px 0 0 0;
+}
+aside #sub_menu a:link{
+    text-decoration: none;
+    font-size: 14px;
+    color:#444444
+}
+aside #sub_menu a:hover{
+    text-decoration: none;
+    font-size: 14px;
+    color:#0000ff;
+    font-weight:bold;
+}
+aside #sub_menu a:visited{
+    text-decoration: none;
+    font-size: 14px;
+    color: #444444;
+}
+aside #sub_menu a:active{
+    text-decoration: none;
+    font-size: 14px;
+    color: #444444;
+}
+/* 14장 18번슬라이드 */
+
+/* 배너 */
+aside #sub_banner{
+    width: 186px;
+    height: 156px;
+    margin:15px 0 0 0;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+}
+aside #sub_banner ul{
+    padding: 6px 0 0 4px;
+}
+aside #sub_banner ul img{
+    display: block;
+}
+/* 14장 20번슬라이드 */

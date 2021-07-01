@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+</head>
+<body>
+    <script>
+        function getAge() {
+            // 입력값 얻어오기
+            var birthday=document.getElementById('birthday').value.split("-");
+
+            // 날짜 오브젝트 작성
+            var d1=new Date(birthday[0],birthday[1]-1,birthday[2]);
+
+            //월은 0부터 시작하므로
+            // 1970년 1월 1일부터 birthday로 지정한 시간까지의 경과 시간을 ms 단위로 계산
+            var d2=new Date();
+
+            // 1970년 1월 1일부터 지금까지의 시간을 ms 단위로 계산     
+            // 일수, 연령 계산
+            var diff=d2.getTime()-d1.getTime();
+            var daysPast=Math.floor(diff/(1000*60*60*24));
+            var age=Math.floor(daysPast/365.25);
+      
+            //결과 표시
+            document.getElementById("daysPast").innerHTML=daysPast;
+            document.getElementById("age").innerHTML=age;
+        }
+    </script>
+    <h1>내가 살아온 인생 계산하기</h1 >
+    <p>생년월일 입력 : <input type="text" name="birthday" id="birthday" value="0000-00-00" ></p>
+    <p><input type="button" value="나이 계산" onclick="getAge();"></p>
+    <p>당신은 태어나서부터 <span id="daysPast"> ???</span >일 경과해서 지금은 <span id="age">???</span>살입니다.</p>
+</body>
+</html>

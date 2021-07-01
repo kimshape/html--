@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>11장 연습문제 5번 해답</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th width="80"> 이름 </th>
+            <th width="80"> 가격 </th>
+            <th width="50"> 개수 </th>
+        </tr>
+        <tr>
+            <td><p id="data10"></td>
+            <td><p id="data20"></td>
+            <td><p id="data30"></td>
+        </tr>
+        <tr>
+            <td><p id="data11"></td>
+            <td><p id="data21"></td>
+            <td><p id="data31"></td>
+        </tr>
+        <tr>
+            <td><p id="data12"></td>
+            <td><p id="data22"></td>
+            <td><p id="data32"></td>
+        </tr>
+    </table>
+
+    <script>
+        var fruits= new Array(
+            ['사과', 21000, 10 ],
+            ['참외', 18000, 20 ],
+            ['귤', 15000,30]
+        );
+
+        for(var i=0; i<3; i++) {
+            var f=document.getElementById("data1"+i);
+            f.textContent= fruits[i][0];
+            var p=document.getElementById("data2"+i);
+            p.textContent= fruits[i][1];
+            var n=document.getElementById("data3"+i);
+            n.textContent= fruits[i][2];
+        }
+    </script>
+</body>
+</html>

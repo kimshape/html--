@@ -1,0 +1,35 @@
+#menu{
+    list-style: none;
+    display:flex;
+}
+#visit_info{
+    border-bottom:solid;
+    border-color: #cccccc;
+    /* 문제 2번 뭔뜻인지 모르겠음 */
+    /* hr대신 border로 써야하는 이유라도있나 */
+
+}
+#fee{
+    border: solid;
+   background-color: #f6fdf7;
+    border-color: #bcd3be;
+   width: 400px;
+   margin: 20px;
+   padding: 10px;
+   list-style: none;
+
+}
+
+#traffic{
+    list-style-image: url(bulit_green.gif);
+}
+
+#comment{
+    width: 700px;
+    border: solid;
+    background-color: #f6fdf7;
+    border-color: #bcd3be;
+    margin: 20px;
+    padding: 10px;
+    line-height: 150%;
+}

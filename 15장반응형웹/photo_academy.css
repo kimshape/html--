@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+
+}
+body{
+    font-family: "맑은 고딕", "돋움";
+    font-style: 100%;
+}
+
+.c1{
+    width: 8.33%; float: left; padding: 15px;
+}
+.c2{
+    width: 16.66%; float: left; padding: 15px;
+}
+.c3{
+    width: 25%; float: left; padding: 15px;
+}
+.c4{
+    width: 33.33%; float: left; padding:15px;
+}
+.c5{
+    width: 41.66%; float: left; padding:15px;
+}
+.c6{
+    width: 50%;float: left; padding:15px;
+}
+.c7{
+    width: 58.33%;float: left; padding:15px;
+}
+.c8{
+    width: 66.66%;float: left; padding:15px;
+}
+.c9{
+    width: 75%;float: left; padding:15px;
+}
+.c10{
+    width: 83.33%;float: left; padding:15px;
+}
+.c11{
+    width: 91.66%;float: left; padding:15px;
+}
+.c12{
+    width: 100%;float: left; padding:15px;
+}
+@media only screen and (max-width:768px){
+    [class*="c"]{
+        width: 100%;
+    }
+}
+header{
+    height: 80px;
+    padding:20px;
+    background-color: #66c0e7;
+}
+aside{
+    color:#ffffff;
+}
+aside li{
+    padding: 10px;
+    margin: 5px;
+    background-color: #b52d89;
+}
+section#main {
+    padding: 15px;
+}
+section#main p{
+    padding: 10px;
+    font-size: 0.95em;
+    line-height: 130%;
+}
+footer{
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eeeeee;
+}

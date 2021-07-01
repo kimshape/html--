@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Window 객체</title>
+</head>
+<body>
+    <p>문서를 열면 팝업 창이 표시됩니다</p>
+    <script>
+      var height = screen.availHeight;
+      var width = screen.availWidth;
+      document.write("화면의 높이 : ", height,"<br>");
+      document.write("화면의 가로폭 : ",width);
+      var t = (height - 400/2);
+      var left = (width - 500/2);
+      var opt = "width=500, height=400"+", top= "+ t + ", left= "+left;
+      document.write("상단위치",t)
+      window.open("notice.html", "pop", "left = 200, top = 100, width=500, height=400");
+    </script>
+</body>
+</html> 

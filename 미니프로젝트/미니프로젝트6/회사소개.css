@@ -1,0 +1,29 @@
+  
+*{
+    color: #444444;
+    font-size: 16px;
+    font-family: 돋움;
+    line-height: 130%;
+}
+
+
+.title{
+    color: #423022;
+    font-family: 맑은 고딕;
+    text-align: center;
+}
+#headline{
+    color: #8f7e6c;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.orange{
+    color: #ff6400;
+}
+
+#company{
+    color: #307466;
+    font-size: 18px;
+    text-decoration: underline;
+}

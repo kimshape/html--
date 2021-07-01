@@ -1,0 +1,12 @@
+*{
+    font-family: 맑은 고딕;
+    }
+    .date{
+        color: #ffff00;
+        font-size: 28px;
+        font-weight: normal;
+    }
+    .description{
+        color: #ffffff;
+        font-size: 14px;
+    }

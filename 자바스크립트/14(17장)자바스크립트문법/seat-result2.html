@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+  <style>
+    table, td {
+      border:1px solid #ccc;
+      border-collapse: collapse;
+    }
+    td {
+      padding:5px;
+      font-size:0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+  <script>
+
+    document.write("<table>");
+    for (let i = 0; i <= 10; i++) {
+      document.write("<tr>");
+      for (let j = 1; j <= 5; j++) {
+        seatNo = i * colNum + j;    // 좌석 번호
+        if (seatNo > memNum) break;
+        document.write("<td> 좌석 " + seatNo + " </td>");
+      }
+      document.write("</tr>");
+    }
+    document.write("</table>");
+  </script>
+</body>
+</html>

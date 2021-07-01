@@ -1,0 +1,13 @@
+
+.botan_gar{
+font: arial;
+font-size: 60px;
+text-align: center;
+text-shadow: 1px 0 10px;
+color: purple;
+}
+.subtitle{
+    font-size: 30px;
+    color: green;
+    text-decoration: underline;
+}
