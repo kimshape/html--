@@ -5,6 +5,7 @@
 	<title>ballon banner | 자바스크립트 프로젝트북</title>
 	<meta name="copyright" content="2017 Michael Kwon">
 	<link rel="stylesheet" href="style.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="banner_wrap">
@@ -24,7 +25,86 @@
 		</figure>
 		<a id="toggle" href="#">배너 닫기</a>
 	</div>
+	<!-- <script src="main.js"></script> -->
+	<script>
+		var banner = $('#banner'),
+			   img = banner.find('img'),
+				 toggle = $('#toggle'),
+				 sound_btn = $('#sound_btn');
+		var banner_height = banner.css('height');
+		var cast = [];		 
+		
+		function set_balloon(num){
+			var x = Math.floor(Math.random() * (500-10) +10),
+			     y = Math.floor(Math.random() * (400-120) +120),
+					 size = Math.floor(Math.random() * (200-100) +100),
+					 angle = Math.floor(Math.random() * 360),
+					 speed = Math.random() * 2;
+					 cast[num] = {
+						 x : x,
+						 y : -y,
+						 size : size,
+						 angle : angle,
+						 speed : speed
+						};						
+		}
+function ball_init(){
+	img.each(function(i){
+		set_balloon(i);
+		img.eq(i).css('left','-9999px').css('top','-9999px');
+	});
+}
+function animate_balloon(){
+	img.each(function(i){
+		img.eq(i).css('left',cast[i].x+'px')
+								.css('top',cast[i].y+'px') 
+								.css('transform','rotate('+cast[i].angle+'deg)');
+		if(cast[i].y < parseInt(banner_height)){
+			cast[i].y  +=1 + cast[i].speed;
+			cast[i].angle += cast[i].speed;
+		}else{
+			set_balloon(i);
+		}
+	});
+}
 
-	<script src="main.js"></script>
+function bgm_init(){
+	var bgm = new Audio();
+	bgm.src = 'images/bgm.mp3';
+	bgm.loop = true;
+	$('body').append(bgm);
+}
+// ---------------------------------------------
+ball_init();
+setInterval(function(){animate_balloon();}, 1000/30);
+bgm_init();
+//========================
+
+sound_btn.click(function(event){
+	var attr = $(this).attr('class');
+	var bgm = $('audio');
+if(attr == 'active'){
+	$(this).removeAttr('class');
+  $(this).attr('src','images/sound_off.png');
+	bgm[0].pause();
+}else{
+	$(this).attr('class', 'active');
+	$(this).attr('src','images/sound_on.png');
+	bgm[0].play();
+}
+});
+toggle.click(function(){
+	var attr = banner.attr('class');
+	if(attr == 'active'){//배너 닫기
+		banner.removeAttr('class');
+		$(this).html('배너 열기');
+		return false;
+	}else{//배너열기
+		banner.attr('class','active');
+		$(this).html('배너 닫기');
+		return false;
+	}
+});
+	</script>
 </body>
 </html>
