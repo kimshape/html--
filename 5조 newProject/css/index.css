@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    font-family: 'Nanum Myeongjo';
+}
+.main_section{
+width: 100%;
+position: absoulute;
+top: 50%;
+left: 50%;
+transform: (-50%,-50%);
+color: white;
+text-align: center;
+width: 1280px;
+    background: orange;
+    height: 800px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.article_title{
+    font-size: 10rem;
+}
+.lg-text{
+    font-size: 3rem;
+}
+.sm-text{
+    font-size: 2rem;
+}
+.placeRoomlist{
+width: 100%;
+}
